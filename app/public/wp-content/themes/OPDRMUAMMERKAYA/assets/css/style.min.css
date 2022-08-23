@@ -3939,7 +3939,8 @@ sup {
 .container, .container-fluid {
     padding: 0 2rem;
     margin: 0 auto;
-    width: 100%
+    width: 100%;
+  
 }
 
 .container {
@@ -3947,7 +3948,9 @@ sup {
 }
 
 .container-fluid {
-    max-width: 1833px
+    max-width: 1833px;
+    display: flex;
+   
 }
 
 .page-wrapper {
@@ -4007,24 +4010,23 @@ sup {
 
 .header .container, .header .container-fluid {
     position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex
+    display: flex;
+    display: inline-block;
 }
 
 .header-top, .header-middle {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center
+    align-items: center;
 }
-
-
-
 .header-top {
     height: 48px
+}
+.header-top .container{
+    
+        max-width: 1210px;
+        display: flex;
+        justify-content: space-between;
+   
 }
 
 .header-top a {
@@ -4059,22 +4061,14 @@ sup {
 }
 
 .top-menu {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
     list-style: none;
     margin: 0
 }
 
 .top-menu li {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
     letter-spacing: .005em
 }
@@ -4083,7 +4077,9 @@ sup {
     margin-left: 4.8rem
 }
 
-
+.header-right .top-menu li + li {
+    margin-left: 5rem
+}
 
 .header-middle {
     position: absolute;
@@ -4092,13 +4088,11 @@ sup {
     top: 48px;
     height: 124px;
     background-color: transparent;
-    padding: 3rem 6.4rem;
+    padding: 3rem 0;
     z-index: 10
 }
 
 .header-middle .header-left {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex
 }
 
@@ -4125,7 +4119,7 @@ sup {
     border: none;
     background: transparent;
     padding: 0;
-    display: none;
+    display: block;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
@@ -4186,8 +4180,6 @@ sup {
 
 .header-search {
     position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -4295,9 +4287,8 @@ sup {
     }
 
     .mobile-menu-toggler {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex
+        display: block;
+        width: 100%;
     }
 
     .header-top .header-left {
@@ -4716,7 +4707,7 @@ ul.sub-menu li.li-with-arrow i.fa-caret-right {
 
 @media (max-width: 1500px) {
     .menu li {
-        padding: 5rem 1rem
+        padding: 1rem 1rem
     }
 }
 
@@ -6357,7 +6348,8 @@ body:not(.loaded) * {
     max-width: 100vw;
     overflow-x: hidden;
     font-size: 1rem;
-    padding: 30.6rem 0 21.5rem 0
+    height: calc(91vh - 48px);
+    /* padding: 30.6rem 0 21.5rem 0; */
 }
 
 .intro-slide.banner .banner-content {
@@ -6564,7 +6556,7 @@ body:not(.loaded) * {
         width: 100%;
         -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
-        order: 2
+        order: 2;
     }
 
     .banner-aside + .banner-aside {
@@ -6911,6 +6903,7 @@ body:not(.loaded) * {
     }
 
     .intro-slider-1 .banner-content {
+        padding: 100px 0;
         width: 75%
     }
 
@@ -11867,7 +11860,13 @@ input[type='password'] {
         width: 100%
     }
 }
+.schedule-section{
+    padding-top: 3rem;
 
+}
+@media (max-width: 991px){
+    .schedule-section{padding-top: 0rem;}
+}
 .schedule-section .widget {
     padding: 45px 0 45px 0
 }
@@ -11877,11 +11876,7 @@ input[type='password'] {
         padding: 5rem
     }
 
-    .schedule-section .puzzle {
-        top: -20rem;
-        -webkit-transform: scale(0.8);
-        transform: scale(0.8)
-    }
+   
 
     .schedule-section .widget {
         padding: 0
@@ -12540,40 +12535,15 @@ input[type='password'] {
 .login-section a::before, .signup-section a::before {
     bottom: -.1rem
 }
-
-.container-fluid{
- display: flex;
- 
+@media (max-width: 330px) {
+    .wp_nav_menu {
+        display: none
+    }
 }
-.container-fluid .header-right .top-menu{
-    margin-left: 41rem;
-    
+.map-section{
+    background-color:#6d95af;
 }
- .header-right {
-    display: flex;
-    margin-left: 67rem;
-}
-.header-right .btn{
-height: 50px;
-top: 7px;
-}
-.schedule-section{
-    height: 300px;
-}
-.schedule-section .puzzle{
+.fa-bars{
     position: relative;
-    left: 106vh;
-    width:15%;
-    
-}
-
-.widget-right{
-    position: relative;
-    left: 55vh;
-    bottom: 17.6vh;
-}
-.widget-left{
-    position: relative;
-    top: 5vh;
-    right: 17vh;
+    left: 150px;
 }

@@ -4,14 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <title>Ana Sayfa | OP. DR. MUAMMER KAYA</title>
+    <title><?php bloginfo('name'); ?><?php wp_title(); ?> </title>
     <meta name="keywords" content="" />
     <meta name="description" content="Op.Dr. Muammer Kaya Resmi Web Sitesi">
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="/wp-content/themes/OPDRMUAMMERKAYA/img/favicon.png">
 
-  
-    <style> -->
+
+    <style>
         #cta-section {
             background: white;
             width: 100%;
@@ -64,7 +64,7 @@
             }
         }
     </style>
-<?php wp_head(); ?>    
+    <?php wp_head(); ?>
 </head>
 
 <body>
@@ -87,157 +87,84 @@
 		------------------------------------------------>
         <div class="row d-xl-none d-lg-none d-md-block d-sm-block d-block">
             <div id="cta-section" class="sticky-cta fixedd" style="margin:0 !important; padding: 0 !important;">
-                <div class="row" id="sticky-wrapper" style="margin:0 !important; padding: 0 !important;">
-                    <div class="col-3 flex" style="margin: 0; background-color: #2b3b82; padding: 0;">
-                        <div class="box">
-                            <a href="#" data-toggle="modal" data-target="#exampleModal" style="font-size: 13px;"
-                                class="links"> <i class="fa fa-calendar-alt"></i>Randevu Formu</a>
+                <div class="container">
+                    <div class="row" id="sticky-wrapper" style="margin:0 !important; padding: 0 !important;">
+                        <div class="col-3 flex" style="margin: 0; background-color: #2b3b82; padding: 0;">
+                            <div class="box">
+                                <a href="#" id="randevu-al" style="font-size: 13px;" class="links randevu-al"> <i class="fa fa-calendar-alt"></i>Randevu Formu</a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-3 flex" style="margin: 0; background-color: #324597; padding: 0;">
-                        <div class="box">
-                            <a href="https://maps.google.com/maps?ll=36.785908,31.429755&z=17&t=m&hl=tr&gl=TR&mapclient=embed&q=Hasan%20Ali%20Y%C3%BCcel%20Cd.%20No%3A7%20Ayd%C4%B1nevler%2007600%20Manavgat%2FAntalya"
-                                target="_blank" style="font-size: 13px;" class="links"> <i
-                                    class="fa fa-map-marker-alt"></i>Adres</a>
+                        <div class="col-3 flex" style="margin: 0; background-color: #324597; padding: 0;">
+                            <div class="box">
+                                <a href="https://maps.google.com/maps?ll=36.785908,31.429755&z=17&t=m&hl=tr&gl=TR&mapclient=embed&q=Hasan%20Ali%20Y%C3%BCcel%20Cd.%20No%3A7%20Ayd%C4%B1nevler%2007600%20Manavgat%2FAntalya" target="_blank" style="font-size: 13px;" class="links"> <i class="fa fa-map-marker-alt"></i>Adres</a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-3 flex" style="margin: 0; background-color: #425ac4; padding: 0;">
-                        <div class="box">
-                            <a href="https://wa.me/+905320585879" target="_blank" style="font-size: 13px;"
-                                class="links"> <i class="fab fa-whatsapp"></i>WhatsApp</a>
+                        <div class="col-3 flex" style="margin: 0; background-color: #425ac4; padding: 0;">
+                            <div class="box">
+                                <a href="https://wa.me/+905320585879" target="_blank" style="font-size: 13px;" class="links"> <i class="fab fa-whatsapp"></i>WhatsApp</a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-3 flex" style="margin: 0; background-color: #5674f8; padding: 0; ">
-                        <div class="box">
-                            <a href="tel:0532 058 58 79" style="font-size: 13px;" class="links"> <i
-                                    class="fa fa-phone"></i>Telefon</a>
+                        <div class="col-3 flex" style="margin: 0; background-color: #5674f8; padding: 0; ">
+                            <div class="box">
+                                <a href="tel:0532 058 58 79" style="font-size: 13px;" class="links"> <i class="fa fa-phone"></i>Telefon</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
         <header class="header">
-            <div class="header-top">
-                <div class="container-fluid">
-                    <div class="header-left">
-                        <ul class="top-menu top-link-menu">
-                            <li><a href="tel:0242 746 06 00" class="link-phone"><i class="fas fa-phone"></i>0242 746 06
-                                    00
-                                </a>
-                            </li>
-                            <li><a href="mailto:info@opdrmuammerkaya.com" class="link-email">
-                                    <i class="fas fa-envelope-open"></i> info@opdrmuammerkaya.com
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="header-right">
-                        <ul class="top-menu">
-                            <li><a href="https://www.instagram.com/op.dr.muammerkaya/" class="social-link"><i
-                                        class="fab fa-instagram"></i>Instagram</a></li>
-                            <li><a href="https://www.facebook.com/opdr.muammerkaya/" class="social-link"><i
-                                        class="fab fa-facebook"></i>Facebook</a></li>
-                            <a style="margin: 0 0 0 15px; font-size: 15px;" href="/" class="social-icon">TR</a>
-                            <a style="margin: 0 0 0 15px; font-size: 15px;" href="/en" class="social-icon">EN</a>
-                            <a style="margin: 0 0 0 15px; font-size: 15px;" href="/de" class="social-icon">DE</a>
-                        </ul>
-                    </div>
-                </div>
-
-            </div>
             <div class="header-middle sticky-header">
-                <div class="header-left">
-                    <a href="https://opdrmuammerkaya.com" class="logo">
-                        <h1 class="mb-0">
-                            <img src="/wp-content/themes/OPDRMUAMMERKAYA/img/logo.png" alt="Muammer Kaya" width="280"
-                                class="d-xl-block d-lg-block d-md-block d-sm-block d-none " height="auto">
-                            <img src="/wp-content/themes/OPDRMUAMMERKAYA/img/logo.png" alt="Muammer Kaya" width="180"
-                                class="d-sm-none d-md-none d-lg-none d-xl-none" height="auto">
-                        </h1>
-                    </a>
-                </div>
-                <div class="header-right">
-                    <button class="mobile-menu-toggler">
-                        <span class="sr-only">Mobil menüyü aç</span>
-                        <i class="fal fa-bars"></i>
-                    </button>
-                    <nav class="main-nav ls-20">
-                        <ul class="menu sf-arrows">
-                            <li>
-                                <a href="#">Ana Sayfa</a>
-                            </li>
-                            <li>
-                                <a href="#" class="sf-with-ul">Kurumsal<i class="fas fa-caret-down"></i></a>
-                                <ul href="#" class="submenu" style="margin-top: -5px !important; padding: 10px 15px;">
-                                    <li style="padding: 0.3rem 1.1rem !important; font-size: 1.6rem"><a
-                                            href="/wp-content/themes/OPDRMUAMMERKAYA/pages/about.html">Hakkımızda</a></li>
-                                    <li style="padding: 0.3rem 1.1rem !important; font-size: 1.6rem"><a
-                                            href="/wp-content/themes/OPDRMUAMMERKAYA/pages/team.html">Ekibimiz</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="tedaviler" class="sf-with-ul">Tedaviler<i class="fas fa-caret-down"></i></a>
-                                <ul href="#" class="submenu" style="margin-top: -5px !important; padding: 10px 15px;">
-                                    <li style="padding: 0.3rem 1.1rem !important; font-size: 1.6rem"><a
-                                            href="/wp-content/themes/OPDRMUAMMERKAYA/pages/cilt-yenileme-tedavisi.html">Cilt
-                                            Yenileme Tedavisi</a></li>
-                                    <li style="padding: 0.3rem 1.1rem !important; font-size: 1.6rem"><a
-                                            href="/wp-content/themes/OPDRMUAMMERKAYA/pages/mezoterapi-uygulamalari.html">Mezoterapi
-                                            Uygulamaları</a></li>
-                                    <li style="padding: 0.3rem 1.1rem !important; font-size: 1.6rem"><a
-                                            href="/wp-content/themes/OPDRMUAMMERKAYA/pages/kirisiklik-tedavisi.html">Kırışıklık
-                                            Tedavisi</a></li>
-                                    <li style="padding: 0.3rem 1.1rem !important; font-size: 1.6rem"><a
-                                            href="/wp-content/themes/OPDRMUAMMERKAYA/pages/leke-tedavisi.html">Leke Tedavisi</a>
-                                    </li>
-                                    <li style="padding: 0.3rem 1.1rem !important; font-size: 1.6rem"><a
-                                            href="/wp-content/themes/OPDRMUAMMERKAYA/pages/thulium-tedavisi.html">Thulium Lazer</a>
-                                    </li>
-                                    <li style="padding: 0.3rem 1.1rem !important; font-size: 1.6rem"><a
-                                            href="/wp-content/themes/OPDRMUAMMERKAYA/pages/dudak-dolgusu.html">Dudak Dolgusu</a>
-                                    </li>
-                                    <li style="padding: 0.3rem 1.1rem !important; font-size: 1.6rem"><a
-                                            href="/wp-content/themes/OPDRMUAMMERKAYA/pages/burun-dolgusu.html">Burun Dolgusu</a>
-                                    </li>
-                                    <li style="padding: 0.3rem 1.1rem !important; font-size: 1.6rem"><a
-                                            href="/wp-content/themes/OPDRMUAMMERKAYA/pages/yanak-dolgusu.html">Yanak Dolgusu</a>
-                                    </li>
-                                    <li style="padding: 0.3rem 1.1rem !important; font-size: 1.6rem"><a
-                                            href="/wp-content/themes/OPDRMUAMMERKAYA/pages/akilli-dolgu.html">Akıllı Dolgu</a>
-                                    </li>
-                                    <li style="padding: 0.3rem 1.1rem !important; font-size: 1.6rem"><a
-                                            href="/wp-content/themes/OPDRMUAMMERKAYA/pages/bolgesel-zayiflama.html">Bölgesel
-                                            Zayıflama</a></li>
-                                    <li style="padding: 0.3rem 1.1rem !important; font-size: 1.6rem"><a
-                                            href="/wp-content/themes/OPDRMUAMMERKAYA/pages/altin-igne.html">Altın İğne
-                                            Tedavisi</a></li>
-                                    <li style="padding: 0.3rem 1.1rem !important; font-size: 1.6rem"><a
-                                            href="/wp-content/themes/OPDRMUAMMERKAYA/pages/ip-uygulamasi.html">İp
-                                            Uygulamaları</a></li>
-                                    <li style="padding: 0.3rem 1.1rem !important; font-size: 1.6rem"><a
-                                            href="/wp-content/themes/OPDRMUAMMERKAYA/pages/medikal-ciltbakim.html">Medikal
-                                            Cilt Bakımı</a></li>
-                                    <li style="padding: 0.3rem 1.1rem !important; font-size: 1.6rem"><a
-                                            href="/wp-content/themes/OPDRMUAMMERKAYA/pages/lazer.html">Lazer
-                                            Epilasyon</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="/wp-content/themes/OPDRMUAMMERKAYA/pages/contact.html">İletişim</a>
-                            </li>
-                        </ul><!-- End .menu -->
-                    </nav><!-- End .main-nav -->
-
-                    <a href="#" data-toggle="modal" data-target="#exampleModal"
-                        class="btn btn-sm btn-primary-color ls-0">
-                        <span>Randevu Al</span>
-                    </a>
-                    <a href="https://wa.me/+905320585879" class="btn btn-sm btn-whatsapp-color ls-0 btn-login">
-                        <span>WhatsApp</span>
-                    </a>
+                <div class="container">
+                    <div class="row">
+                        <div class="header-left col-6 col-lg-3">
+                            <a href="<?php bloginfo('url') ?>" class="logo">
+                                <h1 class="mb-0">
+                                    <img src="/wp-content/themes/OPDRMUAMMERKAYA/img/logo.png" alt="Muammer Kaya" width="280" class="d-xl-block d-lg-block d-md-block d-sm-block d-none " height="auto">
+                                    <img src="/wp-content/themes/OPDRMUAMMERKAYA/img/logo.png" alt="Muammer Kaya" width="180" class="d-sm-none d-md-none d-lg-none d-xl-none" height="auto">
+                                </h1>
+                            </a>
+                        </div>
+                        <div class="header-right col-6 col-lg-9">
+                            <div class="d-lg-none">
+                                <button class="mobile-menu-toggler">
+                                    <span class="sr-only">Mobil menüyü aç</span>
+                                    <i class="fal fa-bars "></i>
+                                </button>
+                            </div>
+                            <div class="d-none d-lg-flex justify-content-end">
+                                <?php while (have_rows('iletisim', 'voobi_options')) : the_row(); ?>
+                                    <div class="wp_nav_menu d-none d-md-block main-nav ls-20">
+                                        <?php
+                                        wp_nav_menu(
+                                            array(
+                                                'theme_location' => 'Navbar',
+                                                'container' => 'ul',
+                                                'menu_id' => 'nav-ul',
+                                                'menu_class' => 'menu sf-arrows',
+                                            )
+                                        );
+                                        ?>
+                                    </div>
+                                    <a href="#" id="randevu-al" class="btn btn-sm btn-primary-color ls-0 randevu-al">
+                                        <span><?php pll_e('randevu'); ?></span>
+                                    </a>
+                                    <?php while (have_rows('whatsapp')) : the_row(); ?>
+                                        <a href="https://wa.me/<?php echo get_sub_field('telefon'); ?>" class="btn btn-sm btn-whatsapp-color ls-0 btn-login">
+                                            <span>WhatsApp</span>
+                                        </a>
+                                    <?php endwhile; ?>
+                                <?php endwhile; ?>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </header>
-        <!------------------------------------------------navigation - end------------------------------------------------>
+        <div class="popup d-none" style="position: fixed;top: 0;left: 0;height: 100%;width: 100%;display: flex;align-items: center;justify-content: center;z-index: 9999;background: rgba(0,0,0,0.5);">
+            <div class="popup-wrapper" style="background-color: #fff; padding: 30px; border-radius: 5px;">
+                <div class="close"><i class="fa fa-window-close"></i></div>
+                <?php echo apply_shortcodes('[contact-form-7 id="497" title="popup form"]'); ?>
+            </div>
+        </div>
+        <?php require VOOBI_THEME_PATH . '/template-parts/top-bar.php'; ?>
